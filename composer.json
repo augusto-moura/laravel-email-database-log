@@ -1,5 +1,5 @@
 {
-    "name": "shvetsgroup/laravel-email-database-log",
+    "name": "augusto-moura/laravel-email-database-log",
     "description": "A simple database logger for all outgoing emails sent by Laravel website.",
     "keywords": ["laravel", "markdown", "mail"],
     "license": "MIT",
@@ -12,26 +12,30 @@
             "name": "Spaan Productions",
             "email": "info@spaanproductions.nl",
             "role": "Developer"
+        },
+        {
+            "name": "Augusto Moura",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0.2",
-        "illuminate/support": "^9.0",
-        "doctrine/dbal": "^3.3",
-        "nesbot/carbon": "^2.0"
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "doctrine/dbal": "^4.0",
+        "nesbot/carbon": "^3.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0",
-        "phpunit/phpunit": "^9.0"
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-0": {
-            "ShvetsGroup\\LaravelEmailDatabaseLog\\": "src/"
+            "AugustoMoura\\LaravelEmailDatabaseLog\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShvetsGroup\\LaravelEmailDatabaseLog\\Tests\\": "tests"
+            "AugustoMoura\\LaravelEmailDatabaseLog\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +48,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ShvetsGroup\\LaravelEmailDatabaseLog\\LaravelEmailDatabaseLogServiceProvider"
+                "AugustoMoura\\LaravelEmailDatabaseLog\\LaravelEmailDatabaseLogServiceProvider"
             ]
         }
     }
